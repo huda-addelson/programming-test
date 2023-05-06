@@ -10,7 +10,6 @@ export default function Navbar() {
   const dispatch = useDispatch();
   const hover = `hover:text-black hover:bg-[#cfd9e2] rounded-md px-3 py-2 transition-all duration-200 text-white`;
   const user = useSelector((state) => state.login.user);
-  console.log(user, 'userrrr');
 
   const Hover = ({ isActive }) => {
     return isActive ? 'text-black px-3 py-2 bg-[#cfd9e2] rounded-md' : hover;
