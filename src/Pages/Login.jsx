@@ -48,12 +48,14 @@ export default function Login() {
         <form
           onSubmit={onSubmit}
           className='w-full sm:w-9/12 lg:w-2/5 bg-white p-10 sm:p-14 md:p-20 flex flex-col rounded-lg'>
+          <span>Username : khoirulhuda</span>
+          <span>Password : 123456</span>
           <UserInput
             title='Username'
             type='text'
             name='username'
             value={username}
-            className='mb-10'
+            className='mb-10 mt-3'
             handlerChange={(e) => dispatch(setUsername(e.target.value))}
           />
           <ToastContainer />
