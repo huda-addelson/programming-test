@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import Button from '../Components/Button';
 import UserInput from '../Components/UserInput';
 import { users } from '../Utils/dataUser';
