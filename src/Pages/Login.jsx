@@ -47,14 +47,16 @@ export default function Login() {
         <form
           onSubmit={onSubmit}
           className='w-full sm:w-9/12 lg:w-2/5 bg-white p-10 sm:p-14 md:p-20 flex flex-col rounded-lg'>
-          <span>Username : khoirulhuda</span>
-          <span>Password : 123456</span>
+          <div className='flex flex-col text-xs self-end'>
+            <span>Username : khoirulhuda</span>
+            <span>Password : 123456</span>
+          </div>
           <UserInput
             title='Username'
             type='text'
             name='username'
             value={username}
-            className='mb-10 mt-3'
+            className='mb-10 mt-6'
             handlerChange={(e) => dispatch(setUsername(e.target.value))}
           />
           <ToastContainer />
